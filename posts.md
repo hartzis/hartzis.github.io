@@ -4,4 +4,8 @@ permalink: /posts/
 title: All Posts
 tagline: A List of Posts
 tags: [blog]
+image:
+  feature: hartzis-posts-feature.jpg
+  credit: hartzis
+  creditlink: http://hartzis.me
 ---
