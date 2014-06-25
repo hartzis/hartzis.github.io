@@ -12,7 +12,7 @@ image:
   creditlink: http://hartzis.me
 ---
 
-Welcome to Hartzis.me! This will going forward document my adventures, mishaps, and fun times had while developing.
+Welcome to Hartzis.me! This will document my adventures, mishaps, and fun times had while developing.
 
 ## me:
 
