@@ -1,9 +1,9 @@
 ---
 layout: home
-description: "A responsive Jekyll theme with editorial tendencies by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+description: "Main page for Hartis.me"
+tags: [hartzis]
 image:
-  feature: texture-feature-01.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  feature: hartzis-main-feature.jpg
+  credit: hartzis
+  creditlink: http://hartzis.me
 ---

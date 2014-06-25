@@ -1,21 +1,22 @@
-title:            Site Title
-description:      Describe your website.
+title:            Hartzis.Me
+description:      'web, food, fun, and life'
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
+#url:              http://localhost:4000
+url:              http://hartzis.github.io
 disqus_shortname:
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         bio-photo.jpg
-  bio:            "Describe your self."
-  email:          your@email.com
+  name:           Brian Emil Hartz
+  avatar:         hartzis.png
+  bio:            "var me = new fullStackWebDeveloper; me.location = 'Denver, CO'; me.funSkills = ['angularjs', 'd3js', 'nodejs']; me.about = 'Life liver and why asker';"
+  email:          brianhartz@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:
+  twitter:        hartzis
   facebook:
-  github:
+  github:         hartzis
   stackoverflow:
-  linkedin:
+  linkedin:       hartzis
   instagram:
   lastfm:
   tumblr:
@@ -27,7 +28,7 @@ owner:
   google_plus:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:
+google_analytics: UA-52253751-1
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
@@ -39,17 +40,15 @@ links:
     url: /about/
   - title: Posts
     url: /posts/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
+  - title: MapTweet.Info
+    url: http://www.maptweet.info
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    America/Mountain
 future:      true
-pygments:    true
-#highlighter: pygments
+#pygments:    true
+highlighter: pygments
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
