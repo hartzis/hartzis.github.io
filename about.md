@@ -22,3 +22,5 @@ Welcome to Hartzis.me! This will document my adventures, mishaps, and fun times 
 * Developed [MapTweet.Info](http://www.maptweet.info) with the knowledge I learned in 10 weeks at RefactorU
 
 Thank you for your time and interest in [Me](http://www.hartzis.me)!
+
+Please check out my work within post [RefactorU and Projects](http://www.hartzis.me/refactoru-and-projects).

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: One Post and Angular
-description: "One post and talk about a great angular directive."
+title: Angular and ngEnter
+description: "About a great angular directive."
 tags: [angular, javascript, directive]
 comments: false
 ---

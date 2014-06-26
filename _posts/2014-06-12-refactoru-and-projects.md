@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zero Post and RefactorU
-description: "Zero Post and talk about refactoru."
+title: RefactorU and Projects
+description: "Time at refactoru and projects built."
 tags: [javascript, angular, node, d3, refactoru]
 comments: false
 ---
