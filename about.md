@@ -23,4 +23,4 @@ Welcome to Hartzis.me! This will document my adventures, mishaps, and fun times 
 
 Thank you for your time and interest in [Me](http://www.hartzis.me)!
 
-Please check out my work within post [RefactorU and Projects](http://www.hartzis.me/refactoru-and-projects).
+> Please check out my [Projects](http://www.hartzis.me/projects).

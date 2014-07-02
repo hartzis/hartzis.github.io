@@ -41,9 +41,8 @@ links:
     url: /about/
   - title: Posts
     url: /posts/
-  - title: MapTweet.Info
-    url: http://www.maptweet.info
-    external: true
+  - title: Projects
+    url: /projects/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Mountain
