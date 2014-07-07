@@ -9,9 +9,9 @@ disqus_shortname:
 # Owner/author information
 owner:
   name:           Brian Emil Hartz
-  avatar:         hartzis.png
+  avatar:         http://www.gravatar.com/avatar/6c1be341cc1cf3bf3f4f849d0eb282b4.png?s=120
   bio:            "var me = new fullStackWebDeveloper; me.location = 'Denver, CO'; me.funSkills = ['angularjs', 'd3js', 'nodejs']; me.about = 'Life liver and why asker';"
-  email:          brianhartz@gmail.com
+  email:          "brianhartz@gmail.com"
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        hartzis
   facebook:

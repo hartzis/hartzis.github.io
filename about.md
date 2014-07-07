@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 permalink: /about/
 title: About Brian Emil and Hartzis.me
 tagline: Hartzis who?
@@ -21,6 +21,4 @@ Welcome to Hartzis.me! This will document my adventures, mishaps, and fun times 
 * Graduated as a Full Stack Web Developer from [RefactorU](http://www.refactoru.com) June 2014
 * Developed [MapTweet.Info](http://www.maptweet.info) with the knowledge I learned in 10 weeks at RefactorU
 
-Thank you for your time and interest in [Me](http://www.hartzis.me)!
-
-> Please check out my [Projects](http://www.hartzis.me/projects).
+Please check out my [Projects](http://www.hartzis.me/projects) and thank you for your time and interest in [Me](http://www.hartzis.me)!

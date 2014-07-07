@@ -1,0 +1,8 @@
+.about-contact {
+  display: none;
+}
+@media (max-width: 599px) {
+  .about-contact {
+    display: block;
+  }
+}
