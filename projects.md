@@ -7,7 +7,7 @@ tags: [about, hartzis, projects, angular, d3]
 modified: 7-2-2014
 comments: false
 image:
-  feature: hartzis-projects-feature.jpg
+  feature: rsz_hartzis-projects-feature.jpg
   credit: hartzis
   creditlink: http://hartzis.me
 ---
@@ -15,6 +15,12 @@ image:
 #####[MapTweet.Info](http://www.maptweet.info)
 * [MapTweet.Info](http://www.maptweet.info) - My capstone/final project for class(and continuing to improve)
   * Uses [AngularJS](http://www.angularjs.com), [Twitter API](http://dev.twitter.com), and [Google Maps API](https://developers.google.com/maps/) to list a few.
+
+######RefactorU Demo Video
+
+<iframe width="853" height="480" src="//www.youtube.com/embed/1xBC6NJfRnk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+######Maptweet.Info Screenshots
 
 <figure>
     <a href="/images/maptweet-info-ss.png"><img src="/images/maptweet-info-ss.png"></a>

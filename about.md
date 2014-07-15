@@ -7,7 +7,7 @@ tags: [about, hartzis]
 modified: 6-6-2014
 comments: false
 image:
-  feature: hartzis-about-feature.jpg
+  feature: rsz_hartzis-about-feature.jpg
   credit: hartzis
   creditlink: http://hartzis.me
 ---
