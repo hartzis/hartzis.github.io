@@ -6,7 +6,11 @@
 	<img src="{{ site.url }}/images/{{ site.owner.avatar }}" class="bio-photo" alt="{{ site.owner.name }} bio photo"></a>
 {% endif %}
 <h3>{{ site.owner.name }}</h3>
-<p>{{ site.owner.bio }}</p>
+<!-- <p>{{ site.owner.bio }}</p> -->
+<p class="bio-line"><span class="bio-var">var</span> me = <span class="bio-new">new</span> webDeveloper;
+<br>me.location = <span class="bio-str">'Denver, CO'</span>;
+<br>me.funSkills = [<span class="bio-str">'angularjs'</span>, <span class="bio-str">'d3js'</span>, <span class="bio-str">'nodejs'</span>];
+<br>me.about = <span class="bio-str">'Life liver and why asker'</span>;</p>
 {% if site.owner.email %}<a href="mailto:{{ site.owner.email }}" class="author-social" target="_top"><i class="fa fa-envelope-o"></i> Email</a>{% endif %}
 {% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>{% endif %}
 {% if site.owner.facebook %}<a href="http://facebook.com/{{ site.owner.facebook }}" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>{% endif %}

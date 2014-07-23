@@ -6,3 +6,18 @@
     display: block;
   }
 }
+
+.bio-line {
+  background-color: rgb(39,40,34);
+  padding: 10px;
+  color: white;
+}
+.bio-var {
+  color: rgb(102,217,239);
+}
+.bio-new {
+  color: rgb(249,39,114);
+}
+.bio-str {
+color: rgb(230,219,116);
+}
