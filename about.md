@@ -43,7 +43,13 @@ Please check out my [Projects](http://www.hartzis.me/projects) and thank you for
 
 ##MapTweet.Info
 * [MapTweet.Info](http://www.maptweet.info) - My capstone/final project for class(and continuing to improve)
-  * Uses [AngularJS](http://www.angularjs.com), [Twitter API](http://dev.twitter.com), and [Google Maps API](https://developers.google.com/maps/) to list a few.
+  * [MEAN Stack](http://blog.mongodb.org/post/49262866911/the-mean-stack-mongodb-expressjs-angularjs-and) Web Application with these technologies:
+    * [MongoDB](http://www.mongodb.org)
+    * [ExpressJS](http://expressjs.com/)
+    * [AngularJS](http://www.angularjs.com)
+    * [Node](http://nodejs.org)
+  * [Twitter API](http://dev.twitter.com)
+  * [Google Maps API](https://developers.google.com/maps/)
 
 ######RefactorU Demo Video
 
