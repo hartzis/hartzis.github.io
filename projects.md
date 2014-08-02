@@ -12,9 +12,15 @@ image:
   creditlink: http://hartzis.me
 ---
 
-#####[MapTweet.Info](http://www.maptweet.info)
+##MapTweet.Info
 * [MapTweet.Info](http://www.maptweet.info) - My capstone/final project for class(and continuing to improve)
-  * Uses [AngularJS](http://www.angularjs.com), [Twitter API](http://dev.twitter.com), and [Google Maps API](https://developers.google.com/maps/) to list a few.
+  * [MEAN Stack](http://blog.mongodb.org/post/49262866911/the-mean-stack-mongodb-expressjs-angularjs-and) Web Application with these technologies:
+    * [MongoDB](http://www.mongodb.org)
+    * [ExpressJS](http://expressjs.com/)
+    * [AngularJS](http://www.angularjs.com)
+    * [Node](http://nodejs.org)
+  * [Twitter API](http://dev.twitter.com)
+  * [Google Maps API](https://developers.google.com/maps/)
 
 ######RefactorU Demo Video
 
@@ -22,25 +28,25 @@ image:
 
 ######Maptweet.Info Screenshots
 
-<figure>
-    <a href="/images/maptweet-info-ss.png"><img src="/images/maptweet-info-ss.png"></a>
+<figure class="figureCenter">
+    <a href="/images/maptweet-info-ss.png"><img src="/images/maptweet-info-ss.png" class="imgSmaller"></a>
     <figcaption>MapTweet.Info</figcaption>
 </figure>
-<figure>
-    <a href="/images/maptweet-search-ss.png"><img src="/images/maptweet-search-ss.png"></a>
+<figure class="figureCenter">
+    <a href="/images/maptweet-search-ss.png"><img src="/images/maptweet-search-ss.png" class="imgSmaller"></a>
     <figcaption>MapTweet.Info</figcaption>
 </figure>
 
-#####[CMPD2012](http://cmpd2012.herokuapp.com)
+##Colorado's 2012 Medicare Payment Data Visualized
 * [Colorado's 2012 Medicare Payment Data Visualized](http://cmpd2012.herokuapp.com) - Collaboration with fellow students [@Lamperta](http://www.twitter.com/Lamperta) and [@keunicek](http://www.twitter.com/keunicek)
   * Uses [D3js](http://www.d3js.com) for both the pie chart and the map.
   * [jQuery](http://jquery.com) for animations and DOM manipulation and traversal
 
-<figure>
-    <a href="/images/cmpd2012-map-ss.jpg"><img src="/images/cmpd2012-map-ss.jpg"></a>
+<figure class="figureCenter">
+    <a href="/images/cmpd2012-map-ss.jpg"><img src="/images/cmpd2012-map-ss.jpg" class="imgSmaller"></a>
   <figcaption>cmpd2012.herokuapp.com</figcaption>
 </figure>
-<figure>
-    <a href="/images/cmpd2012-info-ss.jpg"><img src="/images/cmpd2012-info-ss.jpg"></a>
+<figure class="figureCenter">
+    <a href="/images/cmpd2012-info-ss.jpg"><img src="/images/cmpd2012-info-ss.jpg" class="imgSmaller"></a>
     <figcaption>cmpd2012.herokuapp.com</figcaption>
 </figure>
