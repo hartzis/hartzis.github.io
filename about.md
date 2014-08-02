@@ -12,9 +12,21 @@ image:
   creditlink: http://hartzis.me
 ---
 
+<section id="table-of-contents" class="toc tocFixed">
+  <header>
+    <a href="#">
+      <h3>About Me:</h3>
+    </a>
+  </header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->
+
 Welcome to Hartzis.me! This will document my adventures, mishaps, and fun times had while developing.
 
-## me:
+## me
 
 * Colorado State Graduate 2008
 * Worked in the GIS field for 5+ years
@@ -29,7 +41,7 @@ Please check out my [Projects](http://www.hartzis.me/projects) and thank you for
 
 #Projects
 
-##[MapTweet.Info](http://www.maptweet.info)
+##MapTweet.Info
 * [MapTweet.Info](http://www.maptweet.info) - My capstone/final project for class(and continuing to improve)
   * Uses [AngularJS](http://www.angularjs.com), [Twitter API](http://dev.twitter.com), and [Google Maps API](https://developers.google.com/maps/) to list a few.
 
@@ -39,25 +51,25 @@ Please check out my [Projects](http://www.hartzis.me/projects) and thank you for
 
 ######Maptweet.Info Screenshots
 
-<figure>
-    <a href="/images/maptweet-info-ss.png"><img src="/images/maptweet-info-ss.png"></a>
+<figure class="figureCenter">
+    <a href="/images/maptweet-info-ss.png"><img src="/images/maptweet-info-ss.png" class="imgSmaller"></a>
     <figcaption>MapTweet.Info</figcaption>
 </figure>
-<figure>
-    <a href="/images/maptweet-search-ss.png"><img src="/images/maptweet-search-ss.png"></a>
+<figure class="figureCenter">
+    <a href="/images/maptweet-search-ss.png"><img src="/images/maptweet-search-ss.png" class="imgSmaller"></a>
     <figcaption>MapTweet.Info</figcaption>
 </figure>
 
-##[Colorado's 2012 Medicare Payment Data Visualized](http://cmpd2012.herokuapp.com)
+##Colorado's 2012 Medicare Payment Data Visualized
 * [Colorado's 2012 Medicare Payment Data Visualized](http://cmpd2012.herokuapp.com) - Collaboration with fellow students [@Lamperta](http://www.twitter.com/Lamperta) and [@keunicek](http://www.twitter.com/keunicek)
   * Uses [D3js](http://www.d3js.com) for both the pie chart and the map.
   * [jQuery](http://jquery.com) for animations and DOM manipulation and traversal
 
-<figure>
-    <a href="/images/cmpd2012-map-ss.jpg"><img src="/images/cmpd2012-map-ss.jpg"></a>
+<figure class="figureCenter">
+    <a href="/images/cmpd2012-map-ss.jpg"><img src="/images/cmpd2012-map-ss.jpg" class="imgSmaller"></a>
   <figcaption>cmpd2012.herokuapp.com</figcaption>
 </figure>
-<figure>
-    <a href="/images/cmpd2012-info-ss.jpg"><img src="/images/cmpd2012-info-ss.jpg"></a>
+<figure class="figureCenter">
+    <a href="/images/cmpd2012-info-ss.jpg"><img src="/images/cmpd2012-info-ss.jpg" class="imgSmaller"></a>
     <figcaption>cmpd2012.herokuapp.com</figcaption>
 </figure>

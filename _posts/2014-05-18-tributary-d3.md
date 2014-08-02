@@ -6,9 +6,11 @@ tags: [d3, javascript, tributary]
 comments: false
 ---
 
-<section id="table-of-contents" class="toc">
+<section id="table-of-contents" class="toc tocFixed">
   <header>
-    <h3>Contents</h3>
+    <a href="#">
+      <h3>Tributary.io and D3</h3>
+    </a>
   </header>
 <div id="drawer" markdown="1">
 *  Auto generated table of contents

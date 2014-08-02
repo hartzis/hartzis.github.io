@@ -19,5 +19,15 @@
   color: rgb(249,39,114);
 }
 .bio-str {
-color: rgb(230,219,116);
+ color: rgb(230,219,116);
+}
+.imgSmaller {
+  height: 75%;
+  width: 75%;
+}
+.figureCenter {
+  text-align: center;
+}
+.tocFixed {
+  position: fixed;
 }
