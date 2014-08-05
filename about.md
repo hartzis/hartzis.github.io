@@ -24,7 +24,7 @@ image:
 </div>
 </section><!-- /#table-of-contents -->
 
-Welcome to Hartzis.me! This will document my adventures, mishaps, and fun times had while developing.
+Welcome to Hartzis.me! This will document my adventures and fun times had while developing.
 
 ## me
 
@@ -51,10 +51,6 @@ Please check out my [Projects](http://www.hartzis.me/projects) and thank you for
   * [Twitter API](http://dev.twitter.com)
   * [Google Maps API](https://developers.google.com/maps/)
 
-######RefactorU Demo Video
-
-<iframe width="853" height="480" src="//www.youtube.com/embed/1xBC6NJfRnk?rel=0" frameborder="0" allowfullscreen></iframe>
-
 ######Maptweet.Info Screenshots
 
 <figure class="figureCenter">
@@ -65,6 +61,10 @@ Please check out my [Projects](http://www.hartzis.me/projects) and thank you for
     <a href="/images/maptweet-search-ss.png"><img src="/images/maptweet-search-ss.png" class="imgSmaller"></a>
     <figcaption>MapTweet.Info</figcaption>
 </figure>
+
+######RefactorU Demo Video
+
+[MapTweet.Info RefactorU Demo Video](www.youtube.com/embed/1xBC6NJfRnk?rel=0)
 
 ##Colorado's 2012 Medicare Payment Data Visualized
 * [Colorado's 2012 Medicare Payment Data Visualized](http://cmpd2012.herokuapp.com) - Collaboration with fellow students [@Lamperta](http://www.twitter.com/Lamperta) and [@keunicek](http://www.twitter.com/keunicek)
