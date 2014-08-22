@@ -7,6 +7,14 @@
   }
 }
 
+.mobile-bio-photo {
+  display: inline;
+}
+.mobile-contact-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .bio-line {
   background-color: rgb(39,40,34);
   padding: 10px;
