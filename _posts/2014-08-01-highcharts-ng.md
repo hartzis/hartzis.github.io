@@ -23,7 +23,9 @@ I have data, data that needs proper representation in the online web-o-sphere! T
 >Enter [highcharts](www.highcharts.com) the super duper phenominally extra awesome graphing/charting all in one library
 
 #####highcharts and angular
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ipsum. Asperiores voluptatibus quae possimus officia obcaecati unde porro quisquam molestias similique non id fugit, nisi dolorem, voluptates reiciendis magni eum.
+Highcharts is quite dynamic by default.  With this amazing charting library you can easily manipulate how the data is visually displayed.  
+
+>Found a great directive that encapsulated the usability with watches to update data after ajax requests.
 
 ######highcharts ng
 
