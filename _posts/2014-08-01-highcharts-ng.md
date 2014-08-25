@@ -25,29 +25,59 @@ I have data, data that needs proper representation in the online web-o-sphere! T
 #####highcharts and angular
 Highcharts is quite dynamic by default.  With this amazing charting library you can easily manipulate how the data is visually displayed.  
 
->Found a great directive that encapsulated the usability with watches to update data after ajax requests.
+>Found a great directive that encapsulated the usability with watches that update data after ajax requests.
 
 ######highcharts ng
 
->[highcharts-ng](www.hcng.com)
+>[highcharts-ng](https://github.com/pablojim/highcharts-ng)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit, sequi fugit expedita ab inventore rem quaerat repellat, vero harum! Nobis odit, aut facere, repellat aperiam debitis mollitia! Error, expedita!
 
-~~~ javascript
-getData: function($defer, params) {
-  // custom filter applied
-  filteredData = _.reduce(_.toArray($scope.filters.filterByFieldType), function(sum, val) {return sum + val}) > 0 ?
-          $filter('filterByCheckboxColumn')(filteredData, $scope.filters.filterByFieldType, 'Field') :
-          filteredData;
-  // order data by selected column
-  var orderedData = params.sorting() ?
-          $filter('orderBy')(filteredData, params.orderBy()) :
-          filteredData;
+######directive template
+We create another directive to wrap the highcharts-ng directive, to contain all the required configuration stuff.
+~~~ html
+<div class="row">
+  <div class="col-xs-12 text-center"></div>
+  <highchart config="chartConfig"></highchart>
+</div>
+~~~
 
-  // set total for recalc pagination
-  params.total(orderedData.length);
-  // return data with promise
-  $defer.resolve(orderedData.slice((params.page() - 1) * params.count(), params.page() * params.count()));
+~~~ javascript
+.directive('dataChart', [
+    function() {
+      return {
+        restrict: 'E',
+        scope: {
+          chartData: '=chartData'
+        },
+        templateUrl: '/directiveTemplates/dataChart',
+        replace: 'true',
+        controller: ['$scope',
+          function($scope) {
+
+            // setup chart params
+            $scope.chartConfig = {
+              options: {
+                chart: {
+                  backgroundColor: '#f9f9f9',
+                  type: 'area'
+                }
+              },
+              xAxis: {
+                categories: [],
+                tickmarkPlacement: 'on'
+              },
+              yAxis: {
+                title: {
+                  text: ''
+                }
+              },
+              series: [],
+              title: {
+                text: 'Title'
+              },
+              loading: true
+            };
 }
 ~~~
 
