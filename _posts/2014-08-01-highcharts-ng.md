@@ -2,7 +2,7 @@
 layout: post
 title: Charting magic in angular
 description: "Fun with charting in angular."
-tags: [angular, javascript, directive]
+tags: [angular, javascript, directive, highcharts]
 comments: false
 ---
 
@@ -20,7 +20,7 @@ comments: false
 
 I have data, data that needs proper representation in the online web-o-sphere! This data wants to show the world how gorgeous it is! The data is not simple, it is complex and wants to explore how dynamic it can be.
 
->Enter [highcharts](www.highcharts.com) the super duper phenominally extra awesome graphing/charting all in one library
+>Enter [highcharts](www.highcharts.com) the super duper phenomenally extra awesome graphing/charting all in one library
 
 #####highcharts and angular
 Highcharts is quite dynamic by default.  With this amazing charting library you can easily manipulate how the data is visually displayed.  
@@ -31,7 +31,7 @@ Highcharts is quite dynamic by default.  With this amazing charting library you 
 
 >[highcharts-ng](https://github.com/pablojim/highcharts-ng)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit, sequi fugit expedita ab inventore rem quaerat repellat, vero harum! Nobis odit, aut facere, repellat aperiam debitis mollitia! Error, expedita!
+Although it is a directive itself, it has a lot of boilerplate code that has to be attached to the controller's scope. And that is where another wrapper directive comes in handy that isolates the scope.
 
 ######directive template
 We create another directive to wrap the highcharts-ng directive, to contain all the required configuration stuff.
@@ -41,7 +41,7 @@ We create another directive to wrap the highcharts-ng directive, to contain all 
   <highchart config="chartConfig"></highchart>
 </div>
 ~~~
-
+This directive contains the boilerplate javascript for highcharts-ng. This helps with the modularity, keeping everything associated with the directive together.
 ~~~ javascript
 .directive('dataChart', [
     function() {
@@ -82,4 +82,4 @@ We create another directive to wrap the highcharts-ng directive, to contain all 
 ~~~
 
 #####Final thoughts
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nobis at dolor, suscipit nemo magnam iusto laudantium voluptates, cumque eveniet quos voluptatum nisi dicta, voluptatem voluptatibus repellat, obcaecati. Similique, omnis.
+I am using this directive exclusively for a current project, and am loving it. Though this is a short post, it is here to remind others and myself in the future to keep things contained and reusable.
