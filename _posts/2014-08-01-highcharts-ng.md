@@ -40,16 +40,16 @@ I have data, data that needs proper representation in the online web-o-sphere! T
 
 We create another directive to wrap the highcharts-ng directive, to contain all the required configuration stuff.
 
-~~~ html
+{% highlight html %}
 <div class="row">
   <div class="col-xs-12 text-center"></div>
   <highchart config="chartConfig"></highchart>
 </div>
-~~~
+{% endhighlight %}
 
 >This directive contains the boilerplate javascript for highcharts-ng. This helps with the modularity, keeping everything associated with the directive together.
 
-~~~ javascript
+{% highlight javascript linenos %}
 .directive('dataChart', [
     function() {
       return {
@@ -86,7 +86,7 @@ We create another directive to wrap the highcharts-ng directive, to contain all 
               loading: true
             };
 }
-~~~
+{% endhighlight %}
 
 #####Final thoughts
 I am using this directive exclusively for a current project, and am loving it. Though this is a short post, it is here to remind others and myself in the future to keep things contained and reusable.
