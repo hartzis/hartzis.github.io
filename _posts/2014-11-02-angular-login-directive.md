@@ -20,12 +20,11 @@ comments: false
 
 This directive was created to simply handle an initial login screen. It allows us to download angular js from a cdn, to have it available before the client reaches the app.
 
-> I'd rather load angular first instead of jquery, to handle the login.
+> User now has angular from a cdn so app initial load is faster, theoretically...
 
+####Angular Directive Power
 
-
-####Stuff
-
+Using an angular directive for login helps with validating the users ability to consume the actual angular application.  I'd like to eventually have some sort of check that if it didn't load, kindly let the user know that they need to use an updated browser.
 
 
 ####Codepen
@@ -34,8 +33,8 @@ I've been enjoying the usefulness of codepen, and now have begun to realize its 
 
 #####Angular Login Directive Codepen Example
 
-<p data-height="233" data-theme-id="9092" data-slug-hash="bgJqK" data-default-tab="result" data-user="hartzis" class='codepen'>See the Pen <a href='http://codepen.io/hartzis/pen/bgJqK/'>Dynamic Password Validation, work in progress...</a> by Brian Emil Hartz (<a href='http://codepen.io/hartzis'>@hartzis</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//codepen.io/assets/embed/ei.js"></script>
+<p data-height="428" data-theme-id="9092" data-slug-hash="LEPXam" data-default-tab="result" data-user="hartzis" class='codepen'>See the Pen <a href='http://codepen.io/hartzis/pen/LEPXam/'>Angular Login Form Directive</a> by Brian Emil Hartz (<a href='http://codepen.io/hartzis'>@hartzis</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
 
