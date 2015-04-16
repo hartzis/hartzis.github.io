@@ -2,7 +2,7 @@
 layout: post
 title: Respond to the React  
 description: "Learning my third-ish javascript framework in under a year, me likee!"
-tags: []
+tags: [javascript, react, jsx, jest, socket, testing]
 comments: false
 ---
 
