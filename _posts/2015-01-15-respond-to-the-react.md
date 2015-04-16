@@ -18,5 +18,16 @@ comments: false
 </div>
 </section><!-- /#table-of-contents -->
 
+This is my third javascript framework I have begun to learn in under a year since graduating from [RefatorU](www.refactoru.com). Started the roller coaster with Angular, then traversed Backbone w/JQuery, and now the V(iew) that is [Reactjs](https://facebook.github.io/react/)!
 
+> I say ish since React is mostly just the View of a framework, but dizzam it is powerful and fast!
+
+####The Code - React and jsx
+
+
+####Testing - React and Jest
+
+
+
+#####Fun stuff - React and socket.io
 
