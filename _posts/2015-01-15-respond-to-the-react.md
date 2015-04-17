@@ -67,7 +67,13 @@ var TodoApp = React.createClass({
 
 ####Testing - React and Jest
 
+React offers many things, including the amazing ability to test the DOM not in the browser!  
 
+> React.addons.TestUtils + Jest are the awesomeness
+
+The ability to test DOM interaction and state in node with js tests is just, yup. Seriously, I can test clicking things, inputing data, and then see how my app reacts to all of this interaction with js tests! Check out the __tests__ folder below and see how easy it is.
+
+Example todo react app I had fun with, that has jest tests [test-react-with-jest](https://github.com/hartzis/test-react-with-jest)
 
 #####Fun stuff - React and socket.io
 
