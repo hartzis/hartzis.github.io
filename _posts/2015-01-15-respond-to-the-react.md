@@ -30,6 +30,41 @@ I have definitely grown to exuberantly embrace jsx file format and react compone
 
 Having everything inside the component jsx file, javascript, state, and "html", feels right at home now.
 
+######Small example component from a todo app
+
+{% highlight javascript %}
+var TodoApp = React.createClass({
+  getInitialState: function() {
+    return {items: [], text: ''};
+  },
+  onChange: function(e) {
+    this.setState({text: e.target.value});
+  },
+  handleSubmit: function(e) {
+    e.preventDefault();
+    var nextItems = this.state.items.concat([this.state.text]);
+    var nextText = '';
+    this.setState({items: nextItems, text: nextText});
+  },
+  render: function() {
+    return (
+      <div>
+        <h3>TODO</h3>
+        <TodoList items={this.state.items} />
+        <form className="todoForm" onSubmit={this.handleSubmit}>
+          <input className="todoInput" onChange={this.onChange} value={this.state.text} />
+          <button className="submitTodo">{'Add #' + (this.state.items.length + 1)}</button>
+        </form>
+      </div>
+  );}
+});
+{% endhighlight %}
+
+- Small, contained peice of code that has everything right there
+- You get HTML and other custom components as tags(think directives/web components)
+- event handlers are right there, you know where to look
+- state of the elment also clear
+
 ####Testing - React and Jest
 
 
