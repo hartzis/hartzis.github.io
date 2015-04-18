@@ -28,9 +28,10 @@ Welcome to Hartzis.me! This will document my adventures and fun times had while 
 
 ## me
 
-Learning web development has given me an astonishingly diverse and powerful set of tools. I now strive to create fun and interesting applications, and to always keep my brain gulping from the pool of knowledge!
+>Learning web development has given me an astonishingly diverse and powerful set of tools. I now strive to create fun and interesting applications, and to always keep my brain gulping from the pool of knowledge!
 
 History of me:
+
 * Colorado State Graduate 2008
 * Worked in the GIS industry for 5+ years
   * Got introduced to Python scripting which opened the door to programming/developing
