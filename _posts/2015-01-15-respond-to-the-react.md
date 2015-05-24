@@ -26,9 +26,7 @@ This is my third javascript framework I have begun to learn in under a year sinc
 
 I have definitely grown to exuberantly embrace jsx file format and react component creation. I used separate template files for js and html files in backbone and angular with handlebars. These now seems odd to me.
 
-> Why have separation of concerns, why not have what the javascript managing state over in the javascript?!
-
-Having everything inside the component jsx file; javascript, state, and "html", feels right at home now.
+> Having everything inside the component jsx file; javascript, state, and "html", feels right at home now.
 
 ######Small example component from a todo app
 
