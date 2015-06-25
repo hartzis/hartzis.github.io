@@ -32,7 +32,7 @@ Here is where we introduce [Immutable.js](https://facebook.github.io/immutable-j
 
 #####Here is a diagram of a react app structure that I've used many times. Simple, clean, top down approach:
 
-
+![Top down React app](/images/reactApp.png "Top down React App")
 
 Store app state in a top level "view" component that passes its state down as props to subcomponents that handle data display and interaction. The interaction(updating) happens by passing functions down as props. These functions get called by the sub components with updated data that gets merged into the state that in turn gets passed down again as props.
 
