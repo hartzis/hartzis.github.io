@@ -30,7 +30,9 @@ Having a "global" app state has worked wonderfully. This can also lead to intere
 
 Here is where we introduce [Immutable.js](https://facebook.github.io/immutable-js/) in all its wonderful immutableness.  Storing an apps state as an immutable map has saved hours worth of debugging, helped data management and has guided better conceptual understanding of app data flow.
 
-#####Here is a diagram of a react app structure that I've used many times. Simple, clean, top down approach:
+#####React app diagram
+
+Here is a diagram of a react app structure that I've used many times. Simple, clean, top down approach.
 
 ![Top down React app](/images/reactApp.png "Top down React App")
 
@@ -40,3 +42,5 @@ Store app state in a top level "view" component that passes its state down as pr
 
 Here is a small codepen example using ES2015, React, and Immutable.js that uses babel.io precompiler.
 
+<p data-height="257" data-theme-id="9092" data-slug-hash="NqwjpN" data-default-tab="result" data-user="hartzis" class='codepen'>See the Pen <a href='http://codepen.io/hartzis/pen/NqwjpN/'>React and Immutable, Top Down</a> by Brian Emil Hartz (<a href='http://codepen.io/hartzis'>@hartzis</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
