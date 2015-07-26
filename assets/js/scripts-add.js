@@ -27,8 +27,8 @@
         containerEl: $('#ngtable-github')
       },
       {
-        githubURLJSON: 'https://api.github.com/repos/angular-ui/ng-grid?callback=JSON_CALLBACK',
-        githubURL: 'https://github.com/angular-ui/ng-grid',
+        githubURLJSON: 'https://api.github.com/repos/angular-ui/ui-grid?callback=JSON_CALLBACK',
+        githubURL: 'https://github.com/angular-ui/ui-grid',
         name: 'ng-grid',
         containerEl: $('#nggrid-github')
       },
