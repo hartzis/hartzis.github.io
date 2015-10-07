@@ -21,7 +21,7 @@ I just finished 10 weeks of intense learning, practice, and implementation.  [Re
 ####Projects:
 
 #####MapTweet.Info
-* [MapTweet.Info](http://www.maptweet.info) - My capstone/final project for class(and continuing to improve)
+* [MapTweet.Info](https://github.com/hartzis/MapTweet.Info) - My capstone/final project for class(and continuing to improve)
   * Uses [AngularJS](http://www.angularjs.com), [Twitter API](http://dev.twitter.com), and [Google Maps API](https://developers.google.com/maps/) to list a few.
 
 <figure>

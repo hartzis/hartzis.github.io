@@ -37,7 +37,7 @@ History of me:
   * Got introduced to Python scripting which opened the door to programming/developing
 * Decided to change careers and become a Full-Stack Web Developer
 * Graduated from [RefactorU](http://www.refactoru.com) June 2014
-  * Developed [MapTweet.Info](http://www.maptweet.info) with the knowledge I gained at RefactorU
+  * Developed [MapTweet.Info](https://github.com/hartzis/MapTweet.Info) with the knowledge I gained at RefactorU
 
 Please check out my [Projects](http://www.hartzis.me/projects) below and thank you for your time and interest in [Me](http://www.hartzis.me)!
 
@@ -47,11 +47,13 @@ Please check out my [Projects](http://www.hartzis.me/projects) below and thank y
 
 ##MapTweet.Info
 
-Single page angular.js web application that dynamically maps geo-located tweets based on desired search criteria. 
+[github.com/hartzis/MapTweet.Info](https://github.com/hartzis/MapTweet.Info)
+
+Single page angular.js web application that dynamically maps geo-located tweets based on desired search criteria.
 
 >I like maps and big data; so I wanted to see how people interacted geographically with the world around them via twitter and their tweets!
 
-* [MapTweet.Info](http://www.maptweet.info) - My capstone/final project for class(and continuing to improve)
+* [MapTweet.Info](https://github.com/hartzis/MapTweet.Info) - My capstone/final project for class(and continuing to improve)
   * [MEAN Stack](http://blog.mongodb.org/post/49262866911/the-mean-stack-mongodb-expressjs-angularjs-and) Web Application with these technologies:
   * [MongoDB](http://www.mongodb.org)
   * [ExpressJS](http://expressjs.com/)
@@ -59,6 +61,8 @@ Single page angular.js web application that dynamically maps geo-located tweets 
   * [Node](http://nodejs.org)
 * [Twitter API](http://dev.twitter.com)
 * [Google Maps API](https://developers.google.com/maps/)
+
+Application currently live on heroku [here](http://maptweet.herokuapp.com/), *please give it a second or two to load up from heroku hibernation.*
 
 ######Maptweet.Info Screenshots
 
