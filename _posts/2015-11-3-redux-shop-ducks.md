@@ -17,3 +17,6 @@ comments: false
 {:toc}
 </div>
 </section><!-- /#table-of-contents -->
+
+#####Stateless functional components
+<script src="https://gist.github.com/hartzis/469416bd0ac506896e9c"></script>
