@@ -25,6 +25,9 @@ While building the image processing app I needed to upload the images to an expr
 
 ###The React File Upload Component
 
+<p data-height="436" data-theme-id="9092" data-slug-hash="VvNGZP" data-default-tab="result" data-user="hartzis" class='codepen'>See the Pen <a href='http://codepen.io/hartzis/pen/VvNGZP/'>React Image Preview & Upload</a> by Brian Emil Hartz (<a href='http://codepen.io/hartzis'>@hartzis</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
 <script src="https://gist.github.com/hartzis/0b77920380736f98e4f9.js"></script>
 
 >Component Includes Preview of Image
