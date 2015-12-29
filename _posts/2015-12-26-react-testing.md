@@ -1,32 +1,34 @@
 ---
 layout: post
 title: Simply test react components
-description: "Test react component output with shallow rendering"
+description: "Test react components with shallow rendering"
 tags: [javascript, react, testing]
 comments: false
 ---
 
-With react v0.13 they introduced 'shallow rendering', all basic html inside a component is rendered and no sub components are rendered.
+With react v0.13 they introduced 'shallow rendering', all basic html inside a component is rendered and no sub components are rendered. We now have the power to run unit tests in node without the need for a 'DOM'.
 
-We now have the power to run unit tests in node without the need for a 'DOM'. This allows us to help keep our focus and testing confined to a specific component.
+> [Shallow Rendering](https://facebook.github.io/react/docs/test-utils.html#shallow-rendering) takes a component and renders it 'one level deep' and will not render sub components. This allows unit tests to keep focus on their specific component.
+
+This post walks through writing simple tests for an example component `<List/>` which contains `<Item/>` components.
+
+These testing examples use the TAP library [tape](https://github.com/substack/tape) and [airbnb's](http://nerds.airbnb.com/) newly open sourced react component testing utilities [enzyme](https://github.com/airbnb/enzyme) for react components.
 
 #####Example `<List/>` component:
 <script src="https://gist.github.com/hartzis/b1ed6d811e6948b293b9.js"></script>
 
-When we write unit tests for `<List/>` our tests should only focus on its output and not what `<Item>` does with the item data.
-
-For these small testing examples we are going to use [airbnb's](http://nerds.airbnb.com/) newly open sourced react testing library [enzyme](https://github.com/airbnb/enzyme) to test our react components.
+When writing unit tests for `<List/>` the tests should focus on the output of `<List/>` and not what `<Item>` does with the item data.
 
 #####Example tests for `<List/>`:
 <script src="https://gist.github.com/hartzis/d9c5f448eecdf3475d48.js"></script>
 
-These tests focus specifically on `<List/>` and what list is outputing, and they do not concern themselves with what `<Item/>` is going to create. We can now write specific unit tests for `<Item/>`.
+These unit tests focus on `<List/>` and make assertions as to what it will render, and are not concerned with what `<Item/>` will render. `<Item/>` has its own specific unit tests.
 
 #####Example test for `<Item/>`:
 <script src="https://gist.github.com/hartzis/e5f889cc4b0c75849ba8.js"></script>
 
 #####Sum
 
-This is intended to be an easily digestible and simple intro to testing react components. Unit tests for react components can be quick and simple while adding confidence to your code base.
+This post is intended to be an easily digestible and simple intro to testing react components. Unit tests for react components can be quick and simple while adding confidence to your code base.
 
 Please check out the repo [simple-react-enzyme-examples](https://github.com/hartzis/simple-react-enzyme-examples) if you'd like to run/check out these examples!
