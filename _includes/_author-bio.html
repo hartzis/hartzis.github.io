@@ -7,10 +7,11 @@
 {% endif %}
 <h3>{{ site.owner.name }}</h3>
 <!-- <p>{{ site.owner.bio }}</p> -->
-<p class="bio-line"><span class="bio-var">let</span> me = <span class="bio-new">new</span> WebDev();
-<br>me.loc = <span class="bio-str">'Denver, CO'</span>;
-<br>me.enjoy = [<span class="bio-str">'javascript'</span>, <span class="bio-str">'reactjs'</span>, <span class="bio-str">'pondering'</span>];
-<br>me.info = <span class="bio-str">'Life liver and why asker'</span>;</p>
+<p class="bio-line"><span class="bio-var">let</span> me <span class="bio-new">=</span> {
+<br>&nbsp;&nbsp;loc: <span class="bio-str">'Denver, CO'</span>,
+<br>&nbsp;&nbsp;enjoy: [<span class="bio-str">'javascript'</span>, <span class="bio-str">'reactjs'</span>, <span class="bio-str">'pondering'</span>],
+<br>}
+</p>
 {% if site.owner.email %}<a href="mailto:{{ site.owner.email }}" class="author-social" target="_top"><i class="fa fa-envelope-o"></i> Email</a>{% endif %}
 {% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>{% endif %}
 {% if site.owner.facebook %}<a href="http://facebook.com/{{ site.owner.facebook }}" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>{% endif %}
