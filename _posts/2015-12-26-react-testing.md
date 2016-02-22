@@ -14,20 +14,20 @@ This post walks through writing simple tests for an example component `<List/>` 
 
 These testing examples use the TAP library [tape](https://github.com/substack/tape) and [airbnb's](http://nerds.airbnb.com/) newly open sourced react component testing utilities [enzyme](https://github.com/airbnb/enzyme) for react components.
 
-#####Example `<List/>` component:
+### Example `<List/>` component:
 <script src="https://gist.github.com/hartzis/b1ed6d811e6948b293b9.js"></script>
 
 When writing unit tests for `<List/>` the tests should focus on the output of `<List/>` and not what `<Item>` does with the item data.
 
-#####Example tests for `<List/>`:
+### Example tests for `<List/>`:
 <script src="https://gist.github.com/hartzis/d9c5f448eecdf3475d48.js"></script>
 
 These unit tests focus on `<List/>` and make assertions as to what it will render, and are not concerned with what `<Item/>` will render. `<Item/>` has its own specific unit tests.
 
-#####Example test for `<Item/>`:
+### Example test for `<Item/>`:
 <script src="https://gist.github.com/hartzis/e5f889cc4b0c75849ba8.js"></script>
 
-#####Sum
+### Sum
 
 This post is intended to be an easily digestible and simple intro to testing react components. Unit tests for react components can be quick and simple while adding confidence to your code base.
 

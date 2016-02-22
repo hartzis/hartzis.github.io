@@ -1,26 +1,14 @@
 ---
 layout: post
-title: Tasty Vanilla JS and React 
+title: Tasty Vanilla JS and React
 description: "Enjoying more javascript fun with the help of React"
 tags: [javascript, react, jsx]
 comments: false
 ---
 
-<section id="table-of-contents" class="toc tocFixed">
-  <header>
-    <a href="#">
-      <h3>MMMmmmmmmmmmm</h3>
-    </a>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
-
 I'm always trying to improve my base javascript understanding and programming abilities. React helps with this task by letting me focus more on the "business logic" and less on the DOM manipulation.
 
-###Write tasty javascript
+## Write tasty javascript
 
 > React lets you focus more on pure javascript and not the DOM.
 
@@ -34,7 +22,7 @@ Below is a small cart example written with React. It was one of my first react a
   - Pass callbacks to subcomponents to trigger events
 - "vanilla js" jsonP service request for data
 
-#####Example jsonP request from React-cart
+### Example jsonP request from React-cart
 {% highlight javascript %}
 
 AppService.getGramsByQuery = function(query, passedInCallback) {

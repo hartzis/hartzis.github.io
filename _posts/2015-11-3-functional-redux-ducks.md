@@ -6,21 +6,9 @@ tags: [javascript, react, redux, functional]
 comments: false
 ---
 
-<section id="table-of-contents" class="toc tocFixed">
-  <header>
-    <a href="#">
-      <h3>Functional Redux Ducks</h3>
-    </a>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
-
 Recently I've been grasping at and learning more and more about functional programming. React has helped me quite a bit in this venture, but more recently [Redux](https://github.com/rackt/redux) has come into my life and I've truly been enjoying developing with it.
 
-####My learning adventure with redux
+## My learning adventure with redux
 
 My adventure with redux began July 30, 2015. It was warm sunny day in Denver, CO, and one of my coworkers mentioned he'd heard of this amazing state manager that we can use with react called [Redux](https://github.com/rackt/redux).
 
@@ -32,13 +20,13 @@ The first day I started learning about redux I also created [shop ducks with red
 
 * Checkout the ['Shopping for ducks with redux' - live working version](http://www.hartzis.me/react-with-redux-shop-ducks/)
 
-####Stateless functional components
+## Stateless functional components
 
 With the release of react v0.14, we got [stateless functional components](http://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#stateless-functional-components). These have personally helped me stay focused on making smaller more reusable components and smaller more concise pieces of code.
 
-######Example stateless functional components
+### Example stateless functional components
 <script src="https://gist.github.com/hartzis/469416bd0ac506896e9c.js"></script>
 
-####Summarization
+## Summarization
 
 As I continue my adventure in the functional land of javascript I'm having more fun and I personally feel I'm writing better more maintainable code. Cheers to the functional future!

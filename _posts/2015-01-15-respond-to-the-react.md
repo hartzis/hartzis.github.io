@@ -6,29 +6,17 @@ tags: [javascript, react, jsx, jest, socket, testing]
 comments: false
 ---
 
-<section id="table-of-contents" class="toc tocFixed">
-  <header>
-    <a href="#">
-      <h3>React Explorations</h3>
-    </a>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
-
 This is my third javascript framework I have begun to learn in under a year since graduating from [RefatorU](www.refactoru.com). Started the roller coaster with Angular, then traversed Backbone w/JQuery, and now the V(iew) that is [Reactjs](https://facebook.github.io/react/)!
 
 > I say ish since React is mostly just the View of a framework, but dizzam it is powerful and fast!
 
-###The Code - React and jsx
+## The Code - React and jsx
 
 I have definitely grown to exuberantly embrace jsx file format and react component creation. I used separate template files for js and html files in backbone and angular with handlebars. These now seems odd to me.
 
 > Having everything inside the component jsx file; javascript, state, and "html", feels right at home now.
 
-######Small example component from a todo app
+### Small example component from a todo app
 
 {% highlight javascript %}
 var TodoApp = React.createClass({
@@ -63,7 +51,7 @@ var TodoApp = React.createClass({
 - event handlers are right there, you know where to look
 - state of the element also clear
 
-###Testing - React and Jest
+## Testing - React and Jest
 
 React offers many things, including the amazing ability to test the DOM not in the browser!  
 
@@ -73,9 +61,9 @@ The ability to test DOM interaction and state in node with js tests is just, yup
 
 Example todo react app I had fun with, that has jest tests [test-react-with-jest](https://github.com/hartzis/test-react-with-jest)
 
-###Fun stuff - React and socket.io
+## Fun stuff - React and socket.io
 
-I also decided to see how I could integrate updating a component with socket.io.  Turned the previous todo app basically into a chat application. 
+I also decided to see how I could integrate updating a component with socket.io.  Turned the previous todo app basically into a chat application.
 
 Isomorphic todo app turned chat app [react-socket-todo](https://github.com/hartzis/react-socket-todo)
 
@@ -83,7 +71,7 @@ Isomorphic todo app turned chat app [react-socket-todo](https://github.com/hartz
 
 This app is also [isomorphically](http://blog.risingstack.com/from-angularjs-to-react-the-isomorphic-way/) loading the components. Tracking the state on the server side, and new people to the chat get the history as static html, and then the javascript kicks in and takes over.  Using the same JS on the front and the back is pretty cool.
 
-######Example rendering html server side with React
+### Example rendering html server side with React
 
 {% highlight javascript %}
 // Render React to a string, passing in current todos
@@ -96,6 +84,6 @@ var markup = React.renderToString(
 
 You then inject the generated markup where it needs to go in your template being sent from the server and boom!
 
-###Conclusion
+## Conclusion
 
 Currently having a superbly fun time using React, jsx, and jest. Continuing to look forward to a bright future of "web components"!

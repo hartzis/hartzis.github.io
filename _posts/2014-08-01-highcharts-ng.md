@@ -6,28 +6,16 @@ tags: [angular, javascript, directive, highcharts]
 comments: false
 ---
 
-<section id="table-of-contents" class="toc tocFixed">
-  <header>
-    <a href="#">
-      <h3>Charting magic in angular</h3>
-    </a>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
-
 I have data, data that needs proper representation in the online web-o-sphere! This data wants to show the world how gorgeous it is! The data is not simple, it is complex and wants to explore how dynamic it can be.
 <br><br>Enter [highcharts](www.highcharts.com) the super duper phenomenally extra awesome graphing/charting all in one library.  
 
-###highcharts and angular
+## highcharts and angular
 
 [Highcharts](http://www.highcharts.com) is quite dynamic by default.  With this amazing charting library you can easily manipulate how the data is visually displayed.  
 
 >Found a great directive that encapsulated the usability with watches that update data after ajax requests.
 
-###Highcharts-ng
+## Highcharts-ng
 
 [Highcharts-ng](https://github.com/pablojim/highcharts-ng) is a directive itself, it has a lot of boilerplate code that has to be attached to the controller's scope. And that is where another wrapper directive comes in handy that isolates the scope.
 
@@ -36,7 +24,7 @@ I have data, data that needs proper representation in the online web-o-sphere! T
     <figcaption>highcharts-ng from client project</figcaption>
 </figure>
 
-####Directive Template
+### Directive Template
 
 We create another directive to wrap the highcharts-ng directive, to contain all the required configuration stuff.
 
@@ -88,5 +76,5 @@ We create another directive to wrap the highcharts-ng directive, to contain all 
 }
 {% endhighlight %}
 
-#####Final thoughts
+### Final thoughts
 I am using this directive exclusively for a current project, and am loving it. Though this is a short post, it is here to remind others and myself in the future to keep things contained and reusable.

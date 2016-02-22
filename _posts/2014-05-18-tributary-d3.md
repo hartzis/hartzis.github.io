@@ -6,18 +6,6 @@ tags: [d3, javascript, tributary]
 comments: false
 ---
 
-<section id="table-of-contents" class="toc tocFixed">
-  <header>
-    <a href="#">
-      <h3>Tributary.io and D3</h3>
-    </a>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
-
 I'd like to share what maybe the greatest tool for working with D3js: [tributary.io](http://www.trubutary.io).
 
 > Tributary is an experimental environment for rapidly prototyping visualization code.
