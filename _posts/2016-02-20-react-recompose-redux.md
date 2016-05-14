@@ -28,7 +28,7 @@ The problem here is that our view requires DOB pre-formated and a full url to wo
 
 This could be done either in the `mapStateToProps` function with connect, but that shouldn't be its concern. We could also just do that in the `View`, but the view should just be a [presentational component](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.hs3v6lpjm)('dumb' component).
 
-Introducing [recompose](https://github.com/acdlite/recompose)! This library gives us HOC's like `mapPropsOnChange` that only update computed properties when one of the props it is 'watching' changes. Here is an example implementing it for our scientists.
+Introducing [recompose](https://github.com/acdlite/recompose)! This library gives us HOC's like `withPropsOnChange` that only update computed properties when one of the props it is 'watching' changes. Here is an example implementing it for our scientists.
 
 <script src="https://gist.github.com/hartzis/4c6a834e60cb0099edff.js"></script>
 
