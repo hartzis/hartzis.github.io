@@ -10,14 +10,16 @@ I started my developing adventures in javascript and front end development a lit
 
 These open source projects have dramatically and profoundly effect my life both personally and fiscally. Specifically the community around [react](http://facebook.github.io/react/) is so strong, encouraging, and positive. I've been able to contribute to many open source projects over the past two years with great responses, encouragement, and success.
 
-##Contributions to open source
+##Contributing to open source
 
-I don't know why, but I felt extremely comfortable early on trying to contribute back to the open source community. My [first contributions](https://github.com/loganbestwick/geo-tools/commits?author=hartzis) to open source was to simply add some properties to a config for some tools. But it felt great contemplating that my little bit of code could help someone else.
+I don't know why, but I felt extremely comfortable early on trying to contribute back to the open source community. My [first contributions](https://github.com/loganbestwick/geo-tools/commits?author=hartzis) to open source were simple, but it felt great knowing I gave back and possibly helped someone else.
 
-After contributing to a few other small libraries and getting PR's merged in I was added as a collabortor on a pretty successful react component. I truly felt honored and took the responsibilty seriously. I've definitely put some hours into this component, and have felt from the community that my contributions were welcome and wanted.
+After contributing to a few other small libraries and getting PR's merged in I was added as a collaborator on a cool react component - [react-swipeable](https://github.com/dogfessional/react-swipeable/graphs/contributors). I truly felt honored and took the responsibility seriously. Contributing to react-swipeable definitely helped build my confidence and I started to look for ways to contribute to bigger projects.
 
-[Dan Abramov](https://twitter.com/dan_abramov) is truly a stupendously nice person. I [contributed](https://github.com/reactjs/redux/commits?author=hartzis) to [redux](http://redux.js.org/) early-ish in its evolution in an attempt to help Dan with some examples, and he was amazingly [responsive and helpful](https://github.com/reactjs/redux/pull/424)!
+[Dan Abramov](https://twitter.com/dan_abramov) is truly a stupendously nice person. I was able to [contribute](https://github.com/reactjs/redux/commits?author=hartzis) to [redux](http://redux.js.org/) early-ish in its evolution in an attempt to help Dan with some examples, and he was amazingly [responsive and helpful](https://github.com/reactjs/redux/pull/424)!
 
-I've also had great open source success working with people at [AirBnb](https://github.com/airbnb). [Enzyme](/) is AirBnb's open sourced react testing library, and it is simaliar to another testing library I had contributed to called [skin-deep](/).
+##Just to sum up
 
-Since props going into a react component are just an object with keys/values, when you want to test and you use shallow rendering you can just select components based on prop values. I helped add this [feature](/) to [skin-deep](/) and I also thought this would be a great addition to [enzyme](/) so I created an [issue](/) and started a [PR](/). The team at AirBnb and other contributors were also incredibly helpful and give very constructive feedback.
+I try to keep my posts fairly small and to a point and with this post I just wanted to lightly touch on my personal experience with open source. It has been an amazing and fulfilling journey that I wish to continue. I am slightly scared of the open source fatigue and have definitely felt it a bit.
+
+Here's to a bright knowledge sharing future!
