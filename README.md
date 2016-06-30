@@ -1,3 +1,5 @@
+deprecating this jekyll site. Moving to a react generated static site via repo [hartzis/hartzis.me](https://github.com/hartzis/hartzis.me)
+
 #Hartzis use of:
 
 # Minimal Mistakes
