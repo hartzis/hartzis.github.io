@@ -1,0 +1,27 @@
+
+        <!doctype html><html lang="en">
+          <head>
+            <meta charset="utf-8"/>
+            <title>Immutable State and React</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+            <link href="/hartzis.me.1.0.0.css" rel="stylesheet"/>
+            <link rel="canonical" href="http://www.hartzis.me/">
+            <link rel="apple-touch-icon-precomposed" href="/avatar.png"><link rel="shortcut icon" href="/avatar.png">
+          </head>
+          <body>
+            <div id="root"><div><header><div><img src="http://www.hartzis.me/images/rsz_hartzis-main-feature.jpg"/></div><h2>Brian Emil Hartz</h2><p>let me = enjoy ( javascript ( reactjs ( pondering ) ) )</p><p><a href="/posts">all posts</a><a href="http://github.com/hartzis">github</a><a href="http://twitter.com/hartzis">twitter</a><a href="mailto:brianhartz@gmail.com">email</a></p></header><main><article class="post-wrapper"><h1><a href="/react-and-immutable">Immutable State and React</a></h1><hr/><aside><span class="name">Last updated: 5 Jun 2015</span><span> | <span class="tags">tagged: <a href="/posts?tag=javascript">javascript</a><a href="/posts?tag=react">react</a><a href="/posts?tag=immutable">immutable</a><a href="/posts?tag=state">state</a></span></span></aside><section><p>Over the past six months I&#39;ve had the opportunity, nay, the privilege, nay, the honor to work with reactjs. This library is growing in popularity at an astounding rate. My current employer was both smart and lucky to have chosen this library as the ground work for its front end architecture and I consider myself blessed to be apart of its development process.</p><a name=love-hate-of-state class=anchor href=#love-hate-of-state><h2><span class=header-link></span>Love hate of state</h2></a><p>While learning, building, and refactoring react components I&#39;ve come to both love and hate state. I learned fast that many stateful components was a bad idea; instead passing down props while having stateless components was a very good idea.</p><p>Having a &quot;global&quot; app state has worked wonderfully. This can also lead to interesting problems with mutability of your state as it gets passed down as props through components. You will learn fast as I did that mutable state is not a fun problem to solve.</p><a name=immutablejs-win class=anchor href=#immutablejs-win><h2><span class=header-link></span>Immutable.js win</h2></a><p>Here is where we introduce <a href="https://facebook.github.io/immutable-js/">Immutable.js</a> in all its wonderful immutableness. Storing an apps state as an immutable map has saved hours worth of debugging, helped data management and has guided better conceptual understanding of app data flow.</p><a name=react-app-diagram class=anchor href=#react-app-diagram><h3><span class=header-link></span>React app diagram</h3></a><p>Here is a diagram of a react app structure that I&#39;ve used many times. Simple, clean, top down approach.</p><p><img src=/assets/reactApp.png alt="Top down React app" title="Top down React App"></p><p>Store app state in a top level &quot;view&quot; component that passes its state down as props to subcomponents that handle data display and interaction. The interaction(updating) happens by passing functions down as props. These functions get called by the sub components with updated data that gets merged into the state that in turn gets passed down again as props.</p><blockquote><p>ES2015, React and Immutable.js - yup</p></blockquote><p>Here is a small codepen example using ES2015, React, and Immutable.js that uses babel.io precompiler.</p><p data-height=400 data-theme-id=9092 data-slug-hash=NqwjpN data-default-tab=result data-user=hartzis class=codepen>See the Pen <a href="http://codepen.io/hartzis/pen/NqwjpN/">React and Immutable, Top Down</a> by Brian Emil Hartz (<a href=http://codepen.io/hartzis>@hartzis</a>) on <a href=http://codepen.io>CodePen</a>.</p></section><footer><hr/><h4>Thanks taking the time to gander at my electronic writings, please:</h4><ul><li><a href="http://www.twitter.com/share?url=http://hartzis.me/react-and-immutable&amp;amp;text=Immutable State and React">share this on the twitter</a></li><li><a href="http://twitter.com/hartzis">follow me on the twitter</a></li><li><a href="http://github.com/hartzis">check out what I&#x27;ve been coding</a></li><li><a href="/posts">see my other posts</a></li></ul></footer></article></main></div></div>
+            <script src="//assets.codepen.io/assets/embed/ei.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52253751-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+          </body>
+        </html>
+      

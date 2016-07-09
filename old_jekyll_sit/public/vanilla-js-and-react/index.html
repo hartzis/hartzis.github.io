@@ -1,0 +1,51 @@
+
+        <!doctype html><html lang="en">
+          <head>
+            <meta charset="utf-8"/>
+            <title>Tasty Vanilla JS and React</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+            <link href="/hartzis.me.1.0.0.css" rel="stylesheet"/>
+            <link rel="canonical" href="http://www.hartzis.me/">
+            <link rel="apple-touch-icon-precomposed" href="/avatar.png"><link rel="shortcut icon" href="/avatar.png">
+          </head>
+          <body>
+            <div id="root"><div><header><div><img src="http://www.hartzis.me/images/rsz_hartzis-main-feature.jpg"/></div><h2>Brian Emil Hartz</h2><p>let me = enjoy ( javascript ( reactjs ( pondering ) ) )</p><p><a href="/posts">all posts</a><a href="http://github.com/hartzis">github</a><a href="http://twitter.com/hartzis">twitter</a><a href="mailto:brianhartz@gmail.com">email</a></p></header><main><article class="post-wrapper"><h1><a href="/vanilla-js-and-react">Tasty Vanilla JS and React</a></h1><hr/><aside><span class="name">Last updated: 1 Mar 2015</span><span> | <span class="tags">tagged: <a href="/posts?tag=javascript">javascript</a><a href="/posts?tag=react">react</a><a href="/posts?tag=jsx">jsx</a></span></span></aside><section><p>I&#39;m always trying to improve my base javascript understanding and programming abilities. React helps with this task by letting me focus more on the &quot;business logic&quot; and less on the DOM manipulation.</p><a name=write-tasty-javascript class=anchor href=#write-tasty-javascript><h2><span class=header-link></span>Write tasty javascript</h2></a><blockquote><p>React lets you focus more on pure javascript and not the DOM.</p></blockquote><p>Below is a small cart example written with React. It was one of my first react app creations. It simply searches<del>instagram</del>flicker for a search query of images, and lets you add them to a &quot;cart&quot;.</p><p><a href=http://www.hartzis.me/react-gram-cart>React-cart Example</a></p><p><a href=https://github.com/hartzis/react-gram-cart>React-cart github</a></p><ul><li>One way data flow<ul><li>Pass callbacks to subcomponents to trigger events</li></ul></li><li>&quot;vanilla js&quot; jsonP service request for data</li></ul><a name=example-jsonp-request-from-react-cart class=anchor href=#example-jsonp-request-from-react-cart><h3><span class=header-link></span>Example jsonP request from React-cart</h3></a><pre><code>
+AppService.getGramsByQuery = function(query, passedInCallback) {
+
+  var query = &quot;tags=&quot; + tags + &quot;&amp;tagmode=&quot; + &quot;any&quot; + &quot;&amp;format=&quot; + &quot;json&quot;;
+
+  var jsonPcallback = function ( data ) {
+      // remove from global scope
+      delete window.jsonFlickrFeed;
+
+      return passedInCallback({gramItems: data.items});
+  };
+
+  // Vanilla
+  var jsonFlickrFeed = function ( data ) {
+    jsonPcallback( data );
+  }
+  // put on global scope temporaralllyyyy
+  window.jsonFlickrFeed = jsonFlickrFeed;
+  var scr = document.createElement(&#39;script&#39;);
+
+  scr.src = &#39;http://api.flickr.com/services/feeds/photos_public.gne?callback=jsonFlickrFeed&amp;&#39; + query;
+  document.body.appendChild(scr);
+
+}
+</code></pre><p>I&#39;ve been able to learn many fun and delicious javascript goodies over the past few months, and I attribute a lot that to React</p></section><footer><hr/><h4>Thanks taking the time to gander at my electronic writings, please:</h4><ul><li><a href="http://www.twitter.com/share?url=http://hartzis.me/vanilla-js-and-react&amp;amp;text=Tasty Vanilla JS and React">share this on the twitter</a></li><li><a href="http://twitter.com/hartzis">follow me on the twitter</a></li><li><a href="http://github.com/hartzis">check out what I&#x27;ve been coding</a></li><li><a href="/posts">see my other posts</a></li></ul></footer></article></main></div></div>
+            
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52253751-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+          </body>
+        </html>
+      

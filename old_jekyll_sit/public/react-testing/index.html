@@ -1,0 +1,27 @@
+
+        <!doctype html><html lang="en">
+          <head>
+            <meta charset="utf-8"/>
+            <title>Simply test react components</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+            <link href="/hartzis.me.1.0.0.css" rel="stylesheet"/>
+            <link rel="canonical" href="http://www.hartzis.me/">
+            <link rel="apple-touch-icon-precomposed" href="/avatar.png"><link rel="shortcut icon" href="/avatar.png">
+          </head>
+          <body>
+            <div id="root"><div><header><div><img src="http://www.hartzis.me/images/rsz_hartzis-main-feature.jpg"/></div><h2>Brian Emil Hartz</h2><p>let me = enjoy ( javascript ( reactjs ( pondering ) ) )</p><p><a href="/posts">all posts</a><a href="http://github.com/hartzis">github</a><a href="http://twitter.com/hartzis">twitter</a><a href="mailto:brianhartz@gmail.com">email</a></p></header><main><article class="post-wrapper"><h1><a href="/react-testing">Simply test react components</a></h1><hr/><aside><span class="name">Last updated: 26 Dec 2015</span><span> | <span class="tags">tagged: <a href="/posts?tag=javascript">javascript</a><a href="/posts?tag=react">react</a><a href="/posts?tag=testing">testing</a></span></span></aside><section><p>With react v0.13 they introduced &#39;shallow rendering&#39;, all basic html inside a component is rendered and no sub components are rendered. We now have the power to run unit tests in node without the need for a &#39;DOM&#39;.</p><blockquote><p><a href=https://facebook.github.io/react/docs/test-utils.html#shallow-rendering>Shallow Rendering</a> takes a component and renders it &#39;one level deep&#39; and will not render sub components. This allows unit tests to keep focus on their specific component.</p></blockquote><p>This post walks through writing simple tests for an example component <code>&lt;List/&gt;</code> which contains <code>&lt;Item/&gt;</code> components.</p><p>These testing examples use the TAP library <a href=https://github.com/substack/tape>tape</a> and <a href="http://nerds.airbnb.com/">airbnb&#39;s</a> newly open sourced react component testing utilities <a href=https://github.com/airbnb/enzyme>enzyme</a> for react components.</p><a name=example-component class=anchor href=#example-component><h3><span class=header-link></span>Example <code>&lt;List/&gt;</code> component:</h3></a><script src=https://gist.github.com/hartzis/b1ed6d811e6948b293b9.js></script><p>When writing unit tests for <code>&lt;List/&gt;</code> the tests should focus on the output of <code>&lt;List/&gt;</code> and not what <code>&lt;Item&gt;</code> does with the item data.</p><a name=example-tests-for- class=anchor href=#example-tests-for-><h3><span class=header-link></span>Example tests for <code>&lt;List/&gt;</code>:</h3></a><script src=https://gist.github.com/hartzis/d9c5f448eecdf3475d48.js></script><p>These unit tests focus on <code>&lt;List/&gt;</code> and make assertions as to what it will render, and are not concerned with what <code>&lt;Item/&gt;</code> will render. <code>&lt;Item/&gt;</code> has its own specific unit tests.</p><a name=example-test-for- class=anchor href=#example-test-for-><h3><span class=header-link></span>Example test for <code>&lt;Item/&gt;</code>:</h3></a><script src=https://gist.github.com/hartzis/e5f889cc4b0c75849ba8.js></script><a name=sum class=anchor href=#sum><h3><span class=header-link></span>Sum</h3></a><p>This post is intended to be an easily digestible and simple intro to testing react components. Unit tests for react components can be quick and simple while adding confidence to your code base.</p><p>Please check out the repo <a href=https://github.com/hartzis/simple-react-enzyme-examples>simple-react-enzyme-examples</a> if you&#39;d like to run/check out these examples!</p></section><footer><hr/><h4>Thanks taking the time to gander at my electronic writings, please:</h4><ul><li><a href="http://www.twitter.com/share?url=http://hartzis.me/react-testing&amp;amp;text=Simply test react components">share this on the twitter</a></li><li><a href="http://twitter.com/hartzis">follow me on the twitter</a></li><li><a href="http://github.com/hartzis">check out what I&#x27;ve been coding</a></li><li><a href="/posts">see my other posts</a></li></ul></footer></article></main></div></div>
+            
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52253751-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+          </body>
+        </html>
+      

@@ -1,0 +1,67 @@
+
+        <!doctype html><html lang="en">
+          <head>
+            <meta charset="utf-8"/>
+            <title>Charting magic in angular</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+            <link href="/hartzis.me.1.0.0.css" rel="stylesheet"/>
+            <link rel="canonical" href="http://www.hartzis.me/">
+            <link rel="apple-touch-icon-precomposed" href="/avatar.png"><link rel="shortcut icon" href="/avatar.png">
+          </head>
+          <body>
+            <div id="root"><div><header><div><img src="http://www.hartzis.me/images/rsz_hartzis-main-feature.jpg"/></div><h2>Brian Emil Hartz</h2><p>let me = enjoy ( javascript ( reactjs ( pondering ) ) )</p><p><a href="/posts">all posts</a><a href="http://github.com/hartzis">github</a><a href="http://twitter.com/hartzis">twitter</a><a href="mailto:brianhartz@gmail.com">email</a></p></header><main><article class="post-wrapper"><h1><a href="/highcharts-ng">Charting magic in angular</a></h1><hr/><aside><span class="name">Last updated: 1 Aug 2014</span><span> | <span class="tags">tagged: <a href="/posts?tag=angular">angular</a><a href="/posts?tag=javascript">javascript</a><a href="/posts?tag=directive">directive</a><a href="/posts?tag=highcharts">highcharts</a></span></span></aside><section><p>I have data, data that needs proper representation in the online web-o-sphere! This data wants to show the world how gorgeous it is! The data is not simple, it is complex and wants to explore how dynamic it can be.<br><br>Enter <a href=www.highcharts.com>highcharts</a> the super duper phenomenally extra awesome graphing/charting all in one library.</p><a name=highcharts-and-angular class=anchor href=#highcharts-and-angular><h2><span class=header-link></span>highcharts and angular</h2></a><p><a href=http://www.highcharts.com>Highcharts</a> is quite dynamic by default. With this amazing charting library you can easily manipulate how the data is visually displayed.</p><blockquote><p>Found a great directive that encapsulated the usability with watches that update data after ajax requests.</p></blockquote><a name=highcharts-ng class=anchor href=#highcharts-ng><h2><span class=header-link></span>Highcharts-ng</h2></a><p><a href=https://github.com/pablojim/highcharts-ng>Highcharts-ng</a> is a directive itself, it has a lot of boilerplate code that has to be attached to the controller&#39;s scope. And that is where another wrapper directive comes in handy that isolates the scope.</p><p><img src=/assets/highcharts1.png alt="highcharts-ng from client project" title="highcharts-ng from client project"></p><a name=directive-template class=anchor href=#directive-template><h3><span class=header-link></span>Directive Template</h3></a><p>We create another directive to wrap the highcharts-ng directive, to contain all the required configuration stuff.</p><pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-12 text-center&quot;&gt;&lt;/div&gt;
+  &lt;highchart config=&quot;chartConfig&quot;&gt;&lt;/highchart&gt;
+&lt;/div&gt;
+</code></pre><blockquote><p>This directive contains the boilerplate javascript for highcharts-ng. This helps with the modularity, keeping everything associated with the directive together.</p></blockquote><pre><code>.directive(&#39;dataChart&#39;, [
+    function() {
+      return {
+        restrict: &#39;E&#39;,
+        scope: {
+          chartData: &#39;=chartData&#39;
+        },
+        templateUrl: &#39;/directiveTemplates/dataChart&#39;,
+        replace: &#39;true&#39;,
+        controller: [&#39;$scope&#39;,
+          function($scope) {
+
+            // setup chart params
+            $scope.chartConfig = {
+              options: {
+                chart: {
+                  backgroundColor: &#39;#f9f9f9&#39;,
+                  type: &#39;area&#39;
+                }
+              },
+              xAxis: {
+                categories: [],
+                tickmarkPlacement: &#39;on&#39;
+              },
+              yAxis: {
+                title: {
+                  text: &#39;&#39;
+                }
+              },
+              series: [],
+              title: {
+                text: &#39;Title&#39;
+              },
+              loading: true
+            };
+}
+</code></pre><a name=final-thoughts class=anchor href=#final-thoughts><h3><span class=header-link></span>Final thoughts</h3></a><p>I am using this directive exclusively for a current project, and am loving it. Though this is a short post, it is here to remind others and myself in the future to keep things contained and reusable.</p></section><footer><hr/><h4>Thanks taking the time to gander at my electronic writings, please:</h4><ul><li><a href="http://www.twitter.com/share?url=http://hartzis.me/highcharts-ng&amp;amp;text=Charting magic in angular">share this on the twitter</a></li><li><a href="http://twitter.com/hartzis">follow me on the twitter</a></li><li><a href="http://github.com/hartzis">check out what I&#x27;ve been coding</a></li><li><a href="/posts">see my other posts</a></li></ul></footer></article></main></div></div>
+            
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52253751-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+          </body>
+        </html>
+      

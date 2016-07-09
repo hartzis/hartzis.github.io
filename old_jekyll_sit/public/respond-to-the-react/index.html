@@ -1,0 +1,58 @@
+
+        <!doctype html><html lang="en">
+          <head>
+            <meta charset="utf-8"/>
+            <title>Respond to the React</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+            <link href="/hartzis.me.1.0.0.css" rel="stylesheet"/>
+            <link rel="canonical" href="http://www.hartzis.me/">
+            <link rel="apple-touch-icon-precomposed" href="/avatar.png"><link rel="shortcut icon" href="/avatar.png">
+          </head>
+          <body>
+            <div id="root"><div><header><div><img src="http://www.hartzis.me/images/rsz_hartzis-main-feature.jpg"/></div><h2>Brian Emil Hartz</h2><p>let me = enjoy ( javascript ( reactjs ( pondering ) ) )</p><p><a href="/posts">all posts</a><a href="http://github.com/hartzis">github</a><a href="http://twitter.com/hartzis">twitter</a><a href="mailto:brianhartz@gmail.com">email</a></p></header><main><article class="post-wrapper"><h1><a href="/respond-to-the-react">Respond to the React</a></h1><hr/><aside><span class="name">Last updated: 15 Jan 2015</span><span> | <span class="tags">tagged: <a href="/posts?tag=javascript">javascript</a><a href="/posts?tag=react">react</a><a href="/posts?tag=jsx">jsx</a><a href="/posts?tag=jest">jest</a><a href="/posts?tag=socket">socket</a><a href="/posts?tag=testing">testing</a></span></span></aside><section><p>This is my third javascript framework I have begun to learn in under a year since graduating from <a href=www.refactoru.com>RefatorU</a>. Started the roller coaster with Angular, then traversed Backbone w/JQuery, and now the V(iew) that is <a href="https://facebook.github.io/react/">Reactjs</a>!</p><blockquote><p>I say ish since React is mostly just the View of a framework, but dizzam it is powerful and fast!</p></blockquote><a name=the-code---react-and-jsx class=anchor href=#the-code---react-and-jsx><h2><span class=header-link></span>The Code - React and jsx</h2></a><p>I have definitely grown to exuberantly embrace jsx file format and react component creation. I used separate template files for js and html files in backbone and angular with handlebars. These now seems odd to me.</p><blockquote><p>Having everything inside the component jsx file; javascript, state, and &quot;html&quot;, feels right at home now.</p></blockquote><a name=small-example-component-from-a-todo-app class=anchor href=#small-example-component-from-a-todo-app><h3><span class=header-link></span>Small example component from a todo app</h3></a><pre><code>var TodoApp = React.createClass({
+  getInitialState: function() {
+    return {items: [], text: &#39;&#39;};
+  },
+  onChange: function(e) {
+    this.setState({text: e.target.value});
+  },
+  handleSubmit: function(e) {
+    e.preventDefault();
+    var nextItems = this.state.items.concat([this.state.text]);
+    var nextText = &#39;&#39;;
+    this.setState({items: nextItems, text: nextText});
+  },
+  render: function() {
+    return (
+      &lt;div&gt;
+        &lt;h3&gt;TODO&lt;/h3&gt;
+        &lt;TodoList items={this.state.items} /&gt;
+        &lt;form className=&quot;todoForm&quot; onSubmit={this.handleSubmit}&gt;
+          &lt;input className=&quot;todoInput&quot; onChange={this.onChange} value={this.state.text} /&gt;
+          &lt;button className=&quot;submitTodo&quot;&gt;{&#39;Add #&#39; + (this.state.items.length + 1)}&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+  );}
+});
+</code></pre><ul><li>Small, contained piece of code that has everything right there</li><li>You get HTML and other custom components as tags(think directives/web components)</li><li>event handlers are right there, you know where to look</li><li>state of the element also clear</li></ul><a name=testing---react-and-jest class=anchor href=#testing---react-and-jest><h2><span class=header-link></span>Testing - React and Jest</h2></a><p>React offers many things, including the amazing ability to test the DOM not in the browser!</p><blockquote><p>React.addons.TestUtils + Jest are the awesomeness</p></blockquote><p>The ability to test DOM interaction and state in node with js tests is just, yup. Seriously, I can test clicking things, inputing data, and then see how my app reacts to all of this interaction with js tests! Check out the <strong>tests</strong> folder below and see how easy it is.</p><p>Example todo react app I had fun with, that has jest tests <a href=https://github.com/hartzis/test-react-with-jest>test-react-with-jest</a></p><a name=fun-stuff---react-and-socketio class=anchor href=#fun-stuff---react-and-socketio><h2><span class=header-link></span>Fun stuff - React and socket.io</h2></a><p>I also decided to see how I could integrate updating a component with socket.io. Turned the previous todo app basically into a chat application.</p><p>Isomorphic todo app turned chat app <a href=https://github.com/hartzis/react-socket-todo>react-socket-todo</a></p><blockquote><p>State tracked in app passed to components rendered into static html!</p></blockquote><p>This app is also <a href="http://blog.risingstack.com/from-angularjs-to-react-the-isomorphic-way/">isomorphically</a> loading the components. Tracking the state on the server side, and new people to the chat get the history as static html, and then the javascript kicks in and takes over. Using the same JS on the front and the back is pretty cool.</p><a name=example-rendering-html-server-side-with-react class=anchor href=#example-rendering-html-server-side-with-react><h3><span class=header-link></span>Example rendering html server side with React</h3></a><pre><code>// Render React to a string, passing in current todos
+var markup = React.renderToString(
+  TodoApp({
+    todos: todos
+  })
+);
+</code></pre><p>You then inject the generated markup where it needs to go in your template being sent from the server and boom!</p><a name=conclusion class=anchor href=#conclusion><h2><span class=header-link></span>Conclusion</h2></a><p>Currently having a superbly fun time using React, jsx, and jest. Continuing to look forward to a bright future of &quot;web components&quot;!</p></section><footer><hr/><h4>Thanks taking the time to gander at my electronic writings, please:</h4><ul><li><a href="http://www.twitter.com/share?url=http://hartzis.me/respond-to-the-react&amp;amp;text=Respond to the React">share this on the twitter</a></li><li><a href="http://twitter.com/hartzis">follow me on the twitter</a></li><li><a href="http://github.com/hartzis">check out what I&#x27;ve been coding</a></li><li><a href="/posts">see my other posts</a></li></ul></footer></article></main></div></div>
+            
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52253751-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+          </body>
+        </html>
+      
